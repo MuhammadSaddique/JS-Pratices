@@ -619,43 +619,43 @@
 //  })
 
 
-const movies = [
-      {
-         title: 'Amadous',
-         score:89,
-         year:1984
-      },
-      {
-         title: 'Aline',
-         score:92,
-         year:1985
-      },
-      {
-         title: 'Stand by Me',
-         score: 94,
-         year:1986
-      },
-      {
-         title: 'Parasite',
-         score:96,
-         year:1988
-      },
-      {
-         title: 'saro khniii',
-         score:95,
-         year:2023
-      },
-      {
-         title: 'salman khaniii',
-         score:29,
-         year:1945
-      },
-      {
-         title: 'Amir khainnnn',
-         score:46,
-         year:1932
-      }
-   ];
+// const movies = [
+//       {
+//          title: 'Amadous',
+//          score:89,
+//          year:1984
+//       },
+//       {
+//          title: 'Aline',
+//          score:92,
+//          year:1985
+//       },
+//       {
+//          title: 'Stand by Me',
+//          score: 94,
+//          year:1986
+//       },
+//       {
+//          title: 'Parasite',
+//          score:96,
+//          year:1988
+//       },
+//       {
+//          title: 'saro khniii',
+//          score:95,
+//          year:2023
+//       },
+//       {
+//          title: 'salman khaniii',
+//          score:29,
+//          year:1945
+//       },
+//       {
+//          title: 'Amir khainnnn',
+//          score:46,
+//          year:1932
+//       }
+//    ];
 
 /////////////////// by return function 
 //   const goodMovies = movies.filter(movie =>{
@@ -793,14 +793,96 @@ const movies = [
 //    return arguments.reduce((total,el) => total + el)
 // }
 
-function sum(...nums){
-   return nums.reduce((total,el) => total + el);
+// function sum(...nums){
+//    return nums.reduce((total,el) => total + el);
+// }
+
+// function raceResult(gold,silver,...everyoneElse){
+//    console.log(`Gold Medal goes to : ${gold}`);
+//    console.log(`silver Medal goes to : ${silver}`);
+//    console.log(`And Thanks to Every One Else: ${everyoneElse}`);
+// }
+
+
+
+// function myfunction(){
+//    var h1 = document.getElementById("first_line");
+//    h1.innerHTML = "I have no money! to go home back!!!";
+//    h1.style.color = "red";
+//    h1.style.fontSize = "5rem"
+//    h1.style.backgroundColor = "blue";
+//    h1.style.borderRadius = "50%"
+// }
+
+
+//  var a = document.querySelector("h1");
+
+//  a.addEventListener("click",function(){
+//    a.innerHTML = "Badal giya hu me teraaa ex ke taraaa";
+//    a.style.color = "red";
+//    a.style.backgroundColor = "Yellow"
+//  })
+
+
+
+///////////////////////////////   blub
+
+
+
+// var blub = document.querySelector("#blub");
+// var btn = document.querySelector("button");
+
+
+// var flage = 0;
+
+// btn.addEventListener("click", function(){
+//    if(flage == 0){
+//       blub.style.backgroundColor = "Yellow";
+//       console.log("Clicked");
+//       flage = 1
+//    }else{
+//       blub.style.backgroundColor = "Transparent";
+//       console.log("Again Click");
+//       flage = 0
+      
+//    }
+// })
+
+////////////////////////////////////////////////
+
+
+
+
+// var h = document.querySelectorAll("h1");
+// console.log(h);
+
+// h.forEach(function(e){
+//    console.log(e);
+// })
+
+
+
+// var h = document.querySelector("h1");
+// h.textContent = 'Byeeeee'
+
+
+                           //////// 257   The OnClick Property
+
+
+var btn = document.getElementById('v2');
+
+btn.onclick = function(){
+   console.log("You Clicked Me");
+   console.log("I hope it Worked!");
 }
 
-function raceResult(gold,silver,...everyoneElse){
-   console.log(`Gold Medal goes to : ${gold}`);
-   console.log(`silver Medal goes to : ${silver}`);
-   console.log(`And Thanks to Every One Else: ${everyoneElse}`);
+
+function scream(){
+   console.log("AAAAAAAHHHHHHH");
+   console.log("Stop Touching me!!!");
 }
+btn.onmouseenter = scream;
+
+
 
 
