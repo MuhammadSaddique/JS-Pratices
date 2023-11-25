@@ -1,6 +1,7 @@
 
 ////////////////////////////   166
 
+
 // if(1+1 ==2){
 // console.log("Math still works!!!");
 // }
@@ -869,20 +870,16 @@
                            //////// 257   The OnClick Property
 
 
-var btn = document.getElementById('v2');
+const btn = document.querySelector("#v2");
+
 
 btn.onclick = function(){
-   console.log("You Clicked Me");
-   console.log("I hope it Worked!");
+    console.log("You clicked me")
+    console.log("I hope it works porperly")
 }
-
 
 function scream(){
-   console.log("AAAAAAAHHHHHHH");
-   console.log("Stop Touching me!!!");
+    console.log("AAAAAAAAAaaHHHHHHHHH");
+    console.log("you have touch me");
 }
 btn.onmouseenter = scream;
-
-
-
-
