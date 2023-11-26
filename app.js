@@ -940,12 +940,12 @@ var btn = document.querySelector("#v2");
 //////////////////////// 260 Events & the keywords this
 
 
-var makeRandColor = function() {
-   var r = Math.floor(Math.random() * 255);
-   var g = Math.floor(Math.random() * 255);
-   var b = Math.floor(Math.random() * 255);
-   return `rgb(${r},${g},${b})`;
-}
+// var makeRandColor = function() {
+//    var r = Math.floor(Math.random() * 255);
+//    var g = Math.floor(Math.random() * 255);
+//    var b = Math.floor(Math.random() * 255);
+//    return `rgb(${r},${g},${b})`;
+// }
 
 // var buttons = document.querySelectorAll("button");
 // for(let button of buttons){
@@ -968,30 +968,65 @@ var makeRandColor = function() {
 
 
 
-var buttons = document.querySelectorAll("button");
-for(let button of buttons){
-   button.addEventListener("click", colorized)
-}
+// var buttons = document.querySelectorAll("button");
+// for(let button of buttons){
+//    button.addEventListener("click", colorized)
+// }
 
 
 
 
 
-var h1s = document.querySelectorAll("h1");
-for(let h1 of h1s){
-   h1.addEventListener("click",colorized)
-}
+// var h1s = document.querySelectorAll("h1");
+// for(let h1 of h1s){
+//    h1.addEventListener("click",colorized)
+// }
 
 
-var colorized = function(){
-   this.style.backgroundColor = makeRandColor()
-   this.style.color = makeRandColor();
-}
+// var colorized = function(){
+//    this.style.backgroundColor = makeRandColor()
+//    this.style.color = makeRandColor();
+// }
 
 
 
 
 
+
+/////////////////////////////////// 261  KeyWord event $ Event Object
+
+
+document.querySelector("button").addEventListener("click",function(evt){
+   console.log(evt);
+})
+
+// var input = document.querySelector("input");
+// input.addEventListener("keydown",function(e){
+//    console.log(e.key);
+//    console.log(e.code);
+// })
+
+
+
+window.addEventListener("keyup",function(e){
+   switch (e.code){
+      
+      case "ArrowUp":
+         console.log("Up!");
+         break;
+      case "ArrowDown":
+         console.log("Down!");
+         break;
+      case "ArrowLeft":
+         console.log("Left!");
+         break;
+      case "ArrowRight":
+         console.log("Right!");
+         break;
+         default: 
+         console.log("Ignored");
+   }
+})
 
 
 
