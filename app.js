@@ -870,16 +870,137 @@
                            //////// 257   The OnClick Property
 
 
-const btn = document.querySelector("#v2");
+var btn = document.querySelector("#v2");
+
+// btn.onclick = function(){
+//     console.log("You clicked me")
+//     console.log("I hope it works porperly")
+// }
+
+// function scream(){
+//     console.log("AAAAAAAAAaaHHHHHHHHH");
+//     console.log("you have touch me");
+// }
+// btn.onmouseenter = scream;
 
 
-btn.onclick = function(){
-    console.log("You clicked me")
-    console.log("I hope it works porperly")
+////////////////////////////  258    addEventListener 
+
+// var btn3 = document.querySelector("#v3");
+
+// btn3.addEventListener("click",function(){
+//    // alert("You clicked me 3rd time!!!")
+//    console.log("You clicked me 3rd time!!!");
+//    console.log(scream);
+// })
+// btn3.addEventListener("click",scream)
+
+
+// var tasButton = document.querySelector("#tas");
+
+// function twist(){
+//    console.log("Twist");
+// }
+// function shout(){
+//    console.log("Shout");
+// }
+
+// tasButton.onclick = twist;
+// tasButton.onclick = shout;
+
+
+// tasButton.addEventListener('click',twist, {once: "true"});
+// tasButton.addEventListener('click',shout, {once: "true"});
+
+
+
+//////////////////////    258   Random Color Generator
+
+
+// var button = document.querySelector("button");
+// var h1 = document.querySelector("h1");
+
+// button.addEventListener("click",function(){
+   
+//     var newColor = makeRandColor();
+//     document.body.style.backgroundColor = newColor;
+//     h1.innerText = newColor;
+// })
+
+// var makeRandColor = () =>{
+    
+//     var r = Math.floor(Math.random() *255);
+//     var g = Math.floor(Math.random() *255);
+//     var b = Math.floor(Math.random() *255);
+//     return `rgb(${r},${g},${b})`;
+// }
+
+
+
+//////////////////////// 260 Events & the keywords this
+
+
+var makeRandColor = function() {
+   var r = Math.floor(Math.random() * 255);
+   var g = Math.floor(Math.random() * 255);
+   var b = Math.floor(Math.random() * 255);
+   return `rgb(${r},${g},${b})`;
 }
 
-function scream(){
-    console.log("AAAAAAAAAaaHHHHHHHHH");
-    console.log("you have touch me");
+// var buttons = document.querySelectorAll("button");
+// for(let button of buttons){
+//    button.addEventListener("click",function(){
+//       button.style.backgroundColor = makeRandColor();
+//       button.style.color = makeRandColor();
+//    })
+// }
+
+// var h1s = document.querySelectorAll("h1");
+// for(let h1 of h1s){
+//    h1.addEventListener("click",function(){
+//       h1.style.backgroundColor = makeRandColor();
+//       h1.style.color = makeRandColor();
+//    })
+// }
+
+
+/////////////////////////// or
+
+
+
+var buttons = document.querySelectorAll("button");
+for(let button of buttons){
+   button.addEventListener("click", colorized)
 }
-btn.onmouseenter = scream;
+
+
+
+
+
+var h1s = document.querySelectorAll("h1");
+for(let h1 of h1s){
+   h1.addEventListener("click",colorized)
+}
+
+
+var colorized = function(){
+   this.style.backgroundColor = makeRandColor()
+   this.style.color = makeRandColor();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
