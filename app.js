@@ -996,9 +996,9 @@ var btn = document.querySelector("#v2");
 /////////////////////////////////// 261  KeyWord event $ Event Object
 
 
-document.querySelector("button").addEventListener("click",function(evt){
-   console.log(evt);
-})
+// document.querySelector("button").addEventListener("click",function(evt){
+//    console.log(evt);
+// })
 
 // var input = document.querySelector("input");
 // input.addEventListener("keydown",function(e){
@@ -1008,29 +1008,29 @@ document.querySelector("button").addEventListener("click",function(evt){
 
 
 
-window.addEventListener("keyup",function(e){
-   switch (e.code){
+// window.addEventListener("keyup",function(e){
+//    switch (e.code){
       
-      case "ArrowUp":
-         console.log("Up!");
-         break;
-      case "ArrowDown":
-         console.log("Down!");
-         break;
-      case "ArrowLeft":
-         console.log("Left!");
-         break;
-      case "ArrowRight":
-         console.log("Right!");
-         break;
-         default: 
-         console.log("Ignored");
-   }
-})
+//       case "ArrowUp":
+//          console.log("Up!");
+//          break;
+//       case "ArrowDown":
+//          console.log("Down!");
+//          break;
+//       case "ArrowLeft":
+//          console.log("Left!");
+//          break;
+//       case "ArrowRight":
+//          console.log("Right!");
+//          break;
+//          default: 
+//          console.log("Ignored");
+//    }
+// })
 
 
 
-
+/////////////////////////// 262 
 
 
 
