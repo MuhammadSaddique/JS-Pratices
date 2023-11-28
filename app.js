@@ -1030,7 +1030,8 @@ var btn = document.querySelector("#v2");
 
 
 
-/////////////////////////// 262 
+/////////////////////////// 262 form Events and prevent Events
+
 
 // var tweetForm = document.querySelector("#tweetform");
 // var tweetContainer = document.querySelector('#tweets');
@@ -1061,6 +1062,21 @@ var btn = document.querySelector("#v2");
 //     tweetContainer.append(newtweet);
 // }
 
+
+
+//////////////////////////// 263    Input & Change Events
+
+
+var input = document.querySelector('input');
+var h1 = document.querySelector('h1')
+
+// input.addEventListener('change',function(){
+//    console.log();
+// })
+
+input.addEventListener('input',function(e){
+   h1.innerText = input.value;
+})
 
 
 
