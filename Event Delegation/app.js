@@ -1,3 +1,4 @@
+
 var tweetForm = document.querySelector('#tweetForm');
 var tweetContainer = document.querySelector('#tweets');
 
@@ -15,7 +16,7 @@ tweetForm.addEventListener('submit',function(e){
 
 })
 
-function addTweet(){
+function addTweet(username,tweet){
 
     var newTweet = document.createElement('li');
     var bTag = document.createElement('b');
@@ -28,3 +29,6 @@ function addTweet(){
 }
 
 
+tweetContainer.addEventListener('click',function(e){
+    e.target.nodeName === 'LI' && e.target.remove();
+})

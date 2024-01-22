@@ -1067,16 +1067,36 @@ var btn = document.querySelector("#v2");
 //////////////////////////// 263    Input & Change Events
 
 
-var input = document.querySelector('input');
-var h1 = document.querySelector('h1')
+// // var input = document.querySelector('input');
+// // var h1 = document.querySelector('h1')
 
-// input.addEventListener('change',function(){
-//    console.log();
+// // // input.addEventListener('change',function(){
+// // //    console.log();
+// // // })
+
+// // input.addEventListener('input',function(e){
+// //    h1.innerText = input.value;
 // })
 
-input.addEventListener('input',function(e){
-   h1.innerText = input.value;
+
+
+
+var button = document.querySelector('#changeColor');
+var container = document.querySelector('#container');
+
+button.addEventListener('click', function () {
+   // console.log("Hello");
+   container.style.backgroundColor = makeRandColor();
 })
+
+var makeRandColor = function(){
+   var r = Math.floor(Math.random() * 255);
+   var g = Math.floor(Math.random() * 255);
+   var b = Math.floor(Math.random() * 255);
+
+   return `rgb ${r}, ${g}, ${b}`;
+}
+
 
 
 
